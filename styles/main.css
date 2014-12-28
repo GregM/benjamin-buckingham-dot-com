@@ -127,7 +127,7 @@ body {
   }
 
    .logo-isolated {
-    width: 350px;
+    width: 100%;
   }
 
   .volcano-top {
@@ -541,12 +541,12 @@ body {
 
   .evil-castle-left {
     left: -25px;
-    top: 15px;
+    top: 105px;
   }
 
   .evil-castle-right {
     left: 185px;
-    top: -75px;
+    top: 25px;
   }
 }
 
