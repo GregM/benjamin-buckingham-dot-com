@@ -412,6 +412,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .section-two-b {
+    padding: 25px 0px 25px 5px;
+  }
    .cta-text {
     font-size: 25px;
   }
