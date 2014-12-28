@@ -1,18 +1,17 @@
-# About
-This is a Github pages theme based on Twitter Bootstrap for your Github projects
-# Demo:
-http://robertcedwards.github.io/gh-pages-theme/
+# Benjamin Buckingham And The Nightmare's Nightmare
 
-# License
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+This is a website that showcases a children's novel and is available for view here as a source for using various front-end technologies. It features the following front-end technologies:
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+*Parallax.js: There are two instances where parallax is used in the code.
+*Picturefill.js: Images are served at different breakpoints to make this website highly responsive and performant
+*Google Fonts: This website uses both Arvo and Nothing You Could Do from Google Fonts
+*Keyframe animations
+*Media Queries: everwhere
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/gpl.html>.
+View the website at www.benjaminbuckingham.com
+
+If you have any questions, please feel free to contact me!
+
+# LICENSE
+
+All code (css, html, js files) is MIT License. All images are Copyright The Gregarious LLC, sorry. Please ask for permission before using.

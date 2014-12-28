@@ -1,0 +1,983 @@
+/*
+** CSS Copyright The Gregarious LLC
+** Released under MIT License, except for images and copyrights
+*/
+
+
+
+
+
+/*
+** RESET CSS
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*
+** BODY
+*/
+
+body {
+  font-family: 'Arvo', serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+
+/*
+** FIRST SECTION: BOOK TITLE AND PARALLAX;
+*/
+
+.section-one {
+  overflow: hidden;
+}
+
+.background-image-top {
+  display: block;
+  overflow: hidden;
+  width: auto;
+  z-index: 10;
+}
+
+.castle-isolated {
+  position: absolute;
+  left: 28px;
+  top: 460px;
+  z-index: 30;
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  -webkit-animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.logo-isolated {
+  z-index: 70;
+}
+
+.volcano-top {
+  position: absolute;
+  left: 400px;
+  top: -31px;
+  z-index: 40;
+  -webkit-animation: bounce 12s infinite;
+  -moz-animation: bounce 8000ms ease-out;
+  -o-animation: bounce 8000ms ease-out;
+  animation: bounce 12s ease-out;
+}
+
+
+@media (max-width: 480px) {
+  .background-image-top {
+    width: 480px;
+  }
+
+  .castle-isolated {
+    top: 155px;
+    width: 112px;
+    left: 6px;
+  }
+
+   .logo-isolated {
+    width: 350px;
+  }
+
+  .volcano-top {
+    left: 125px;
+    width: 350px;
+    top: -80px;
+  }
+
+  .section-one {
+    height: 330px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .background-image-top {
+    width: 767px;
+  }
+
+  .castle-isolated {
+    top: 272px;
+    width: 152px;
+    left: 40px;
+  }
+
+  .logo-isolated {
+    width: 480px;
+  }
+
+  .volcano-top {
+    left: 125px;
+    width: 600px;
+    top: -80px;
+  }
+
+  .section-one {
+    height: 550px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .background-image-top {
+    width: 1440px;
+  }
+
+  .castle-isolated {
+    top: 503px;
+    width: 299px;
+    left: 40px;
+  }
+
+  .logo-isolated {
+    width: 768px;
+  }
+
+  .volcano-top {
+    left: 550px;
+    width: 807px;
+  }
+
+  .section-one {
+    height: 900px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .volcano-top {
+    left: 310px;
+    width: 807px;
+  }
+}
+
+@media (min-width: 999px) and (max-width: 1240px) {
+  .volcano-top {
+    left: 410px;
+    width: 807px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .background-image-top {
+    width: 1540px;
+  }
+
+  .castle-isolated {
+    top: 540px;
+    width: 314px;
+    left: 53px;
+  }
+
+  .volcano-top {
+    left: 600px;
+    width: 1088px;
+  }
+
+  .section-one {
+    height: 1100px;
+  }
+}
+
+
+
+
+
+
+/*
+** SECTION 2: ABOUT THE BOOK
+*/
+
+.section-two-a {
+  background: #ffffcc;
+  border-top: 1px solid #c6c6c6;;
+  border-bottom: 1px solid #c6c6c6;
+  width: 100%;
+}
+
+.about-the-book {
+  color: #383838;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  text-align: justify;
+  width: 400px;
+}
+
+.about-the-book p {
+  margin-bottom: 25px;
+}
+
+.about-the-book p.first-paragraph {
+  font-size: 18px;
+}
+
+.about-the-book p.second-paragraph {
+  font-family: 'Nothing You Could Do', serif;
+  font-size: 28px;
+}
+
+@media (max-width: 480px) {
+   .about-the-book  {
+    padding: 30px;
+    width: auto;
+  }
+
+   .about-the-book p.first-paragraph {
+    font-size: 18px;
+  }
+
+   .about-the-book p.second-paragraph {
+    font-size: 36px;
+  }
+
+   .about-the-book p.third-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+   .section-two-a {
+    text-align: center;
+  }
+
+   .about-the-book {
+    border: 10px solid #ffffcc;
+    padding: 10px;
+    top: 0;
+    width: auto;
+  }
+
+   .about-the-book p.first-paragraph {
+    font-size: 18px;
+  }
+
+   .about-the-book p.second-paragraph {
+    font-size: 36px;
+  }
+
+   .about-the-book p.third-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 768px) {
+   .about-the-book {
+    padding: 50px;
+    width: auto;
+  }
+
+  .about-the-book p {
+    margin-bottom: 40px;
+  }
+
+   .about-the-book p.first-paragraph {
+    font-size: 24px;
+  }
+
+   .about-the-book p.second-paragraph {
+    font-size: 36px;
+  }
+
+   .about-the-book p.third-paragraph {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
+
+
+/*
+**  SECTION 2b: CTAs to buy the book
+*/
+
+.section-two-b {
+  background: #fff;
+  padding: 50px;
+  width: auto;
+}
+
+.buy-cta-column {
+  display: inline-block;
+  padding: 100px 15px 15px;
+  vertical-align: top;
+}
+
+.book-cover-wrapper {
+  display: inline-block;
+  margin: 50px 0 0 50px;
+  width: auto;
+}
+
+.book-cover-cta {
+  left: 0px;
+  top: 0px;
+  height: 650px;
+}
+
+.cta-buy {
+  color: #003399;
+  background-clip: border-box;
+  background-color: #de9502;
+  background-image: -moz-linear-gradient(top, #efefef, #ffffcc);
+  background-image: -ms-linear-gradient(top, #efefef, #ffffcc);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from( #efefef),to( #ffffcc));
+  background-image: -webkit-linear-gradient(top, #efefef, #ffffcc);
+  background-image: -o-linear-gradient(top, #efefef, #ffffcc);
+  background-image: linear-gradient(top, #efefef, #ffffcc);
+  background-repeat: repeat-x;
+  border: 1px solid #003399;
+  border-radius: 6px;
+  bottom: 25px;
+  display: block;
+  font-size: 34px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 250px;
+}
+
+.cta-buy:hover {
+  background-color: #e89c02;
+  background-image: -moz-linear-gradient(top, #f6a602, #d38e02);
+  background-image: -ms-linear-gradient(top, #f6a602, #d38e02);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from( #f6a602),to( #d38e02));
+  background-image: -webkit-linear-gradient(top, #f6a602, #d38e02);
+  background-image: -o-linear-gradient(top, #f6a602, #d38e02);
+  background-image: linear-gradient(top, #f6a602, #d38e02);
+  background-repeat: repeat-x;
+}
+
+.about-buy-cta {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.cta-text {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 75px;
+}
+
+@media (max-width: 480px) {
+   .cta-text {
+    font-size: 25px;
+  }
+
+  .cta-buy {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .book-cover-wrapper {
+    margin: 0;
+  }
+
+  .buy-cta-column {
+    padding: 25px 15px 15px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+   .cta-text {
+    font-size: 35px;
+  }
+
+  .about-buy-cta {
+    margin-top: 25px;
+  }
+
+  .cta-buy {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .book-cover-wrapper {
+    margin: 0;
+  }
+
+  .buy-cta-column {
+    padding: 25px 15px 15px;
+  }
+}
+
+
+
+
+/*
+** SECTION 3: SECOND ANIMATION;
+*/
+
+.section-three {
+  border-bottom: 1px solid #ffffcc;
+  overflow: hidden;
+}
+
+.background-image-bottom {
+  display: block;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.volcano-bottom {
+  left: -50px;
+  position: absolute;
+  top: -200px;
+  z-index: 40;
+  -webkit-animation: bounce 12s infinite;
+  -moz-animation: bounce 8000ms ease-out;
+  -o-animation: bounce 8000ms ease-out;
+  animation: bounce 12s ease-out;
+}
+
+.trees-left {
+  left: -50px;
+  opacity: 0.8;
+  position: relative;
+  top: 0;
+  z-index: 50;
+}
+
+.trees-right {
+  position: relative;
+  left: 450px;
+  top: 0;
+  z-index: 60;
+}
+
+.evil-castle-left {
+  position: relative;
+  -webkit-animation: bounce 11s infinite;
+  -moz-animation: bounce 9000ms ease-out;
+  -o-animation: bounce 9000ms ease-out;
+  animation: bounce 11s ease-out;
+}
+
+.evil-castle-right {
+  left: 500px;
+  position: relative;
+  top: -100px;
+  -webkit-animation: bounce 11.5s infinite;
+  -moz-animation: bounce 8500ms ease-out;
+  -o-animation: bounce 8500ms ease-out;
+  animation: bounce 11.5s ease-out;
+}
+
+@media (max-width: 480px) {
+   .section-three {
+    height: 340px;
+  }
+
+  .volcano-bottom {
+    left: 0px;
+    top: -100px;
+  }
+
+  .trees-left {
+    left: -50px;
+    top: 0;
+  }
+
+  .trees-right {
+    left: 125px;
+    top: -25px;
+    width: 75px;
+  }
+
+  .evil-castle-left {
+    left: -25px;
+    top: 15px;
+  }
+
+  .evil-castle-right {
+    left: 185px;
+    top: -75px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+   .section-three {
+    height: 350px;
+  }
+
+  .volcano-bottom {
+    left: -100px;
+    top: -100px;
+  }
+
+  .trees-left {
+    left: -50px;
+    top: 0;
+  }
+
+  .trees-right {
+    left: 225px;
+    top: -25px;
+    width: 75px;
+  }
+
+  .evil-castle-left {
+    top: 60px;
+  }
+
+  .evil-castle-right {
+    left: 225px;
+  }
+}
+
+@media (min-width: 768px) {
+   .section-three {
+    height: 510px;
+  }
+
+  .volcano-bottom {
+    left: 275px;
+    top: -100px;
+  }
+
+  .evil-castle-left {
+    left: 60px;
+    top: 50px;
+  }
+}
+
+
+
+
+/*
+** SECTION 4: ABOUT THE AUTHOR
+*/
+
+.section-four {
+  background: #ffffcc;
+  position: relative;
+}
+
+.about-author-text {
+  color: white;
+  font-size: 24px;
+  left: 75px;
+  line-height: 1.5;
+  position: absolute;
+  text-align: justify;
+  top: 100px;
+  width: 450px;
+}
+
+.about-author-text p.email {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.about-author-text p.email a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+   .about-author-image {
+    width: 100%;
+  }
+
+  .about-author-text {
+    color: black;
+    font-size: 16px;
+    left: 0;
+    padding: 30px;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 767px) {
+   .about-author-image {
+    width: 100%;
+  }
+
+  .about-author-text {
+    font-size: 16px;
+    left:  25px;
+    top: 25px;
+    width: 300px;
+  }
+
+  .about-author-text p.email {
+    margin-top: 25px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+   .about-author-image {
+    width: 100%;
+  }
+
+  .about-author-text {
+    font-size: 16px;
+    left:  50px;
+    top: 50px;
+    width: 300px;
+  }
+
+  .about-author-text p.email {
+    margin-top: 25px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+   .about-author-image {
+    width: 100%;
+  }
+}
+
+
+
+/*
+** SECTION 5: PRAISE FOR THE BOOK
+*/
+
+.section-five {
+  background: #efefef;
+  border-bottom: 1px solid #c6c6c6;
+  border-top: 1px solid #c6c6c6;
+  width: auto;
+}
+
+@media (max-width: 480px) {
+   .section-five {
+    padding: 50px 25px;
+  }
+
+  .praise-headline {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .praise-list {
+    margin: 50px 0 0 0;
+  }
+
+  .praise-list li  .reviewer {
+    font-size: 14px;
+  }
+
+  .praise-list li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .section-five {
+    padding: 50px 25px;
+  }
+
+  .praise-headline {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .praise-list {
+    margin: 50px 0 0 0;
+  }
+
+  .praise-list li  .reviewer {
+    font-size: 14px;
+  }
+
+  .praise-list li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+   .section-five {
+    padding: 75px;
+  }
+
+  .praise-headline {
+    font-size: 25px;
+  }
+
+  .praise-list {
+    margin: 50px 0 0 0;
+  }
+
+  .praise-list li  .reviewer {
+    font-size: 25px;
+  }
+
+  .praise-list li {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+}
+
+
+/*
+** SECTION 6: FOOTER
+*/
+
+.section-six {
+  overflow: hidden;
+  width: auto;
+}
+
+footer {
+  color: white;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.footer-image {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.copyright {
+  position: absolute;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
+   .section-six {
+    height: 148px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .section-six {
+    height: 236px;
+  }
+}
+
+@media (min-width: 768px) {
+   .section-six {
+    height: 523px;
+  }
+
+   .copyright {
+    font-size: 20px;
+    padding: 250px 0;
+  }
+}
+
+
+
+
+/*
+** ANIMATIONS
+*/
+
+
+
+@-webkit-keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(5deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(5deg);
+    transform: translate3d(15%,0,0) rotateZ(5deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    -moz-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    transform: translate3d(-5%,0,0) rotateZ(-5deg);
+  }
+}
+
+@-moz-keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(5deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(5deg);
+    transform: translate3d(15%,0,0) rotateZ(5deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    -moz-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    transform: translate3d(-5%,0,0) rotateZ(-5deg);
+  }
+}
+
+@-ms-keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(5deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(5deg);
+    transform: translate3d(15%,0,0) rotateZ(5deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    -moz-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    transform: translate3d(-5%,0,0) rotateZ(-5deg);
+  }
+}
+
+@keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(5deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(5deg);
+    transform: translate3d(15%,0,0) rotateZ(5deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    -moz-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    transform: translate3d(-5%,0,0) rotateZ(-5deg);
+  }
+}
+
+
+@-webkit-keyframes volcano {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(5deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(5deg);
+    transform: translate3d(15%,0,0) rotateZ(5deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    -moz-transform: translate3d(-5%,0,0) rotateZ(-5deg);
+    transform: translate3d(-5%,0,0) rotateZ(-5deg);
+  }
+}
+
+
+
+/* Webkit, Chrome and Safari */
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform:translateY(-1%);
+  }
+  1% {
+    -webkit-transform:translateY(-1%);
+  }
+  3% {
+    -webkit-transform:translateY(0);
+    padding: 4px auto;
+  }
+  4% {
+    -webkit-transform:translateY(-3%);
+  }
+  5% {
+    -webkit-transform:translateY(0%);
+    padding: 4px auto;
+  }
+  6% {
+    -webkit-transform:translateY(-2%);
+  }
+  7% {
+    -webkit-transform:translateY(0%);
+    padding: 5px auto;
+  }
+  8% {
+    -webkit-transform:translateY(-3%);
+  }
+  9% {
+    -webkit-transform:translateY(0%);
+    padding: 5px auto;
+  }
+  10% {
+    -webkit-transform:translateY(-2%);
+  }
+  11% {
+    -webkit-transform:translateY(0%);
+    padding: 6px auto;
+  }
+  12% {
+    -webkit-transform:translateY(-1.5%);
+  }
+  13% {
+    -webkit-transform:translateY(0%);
+    padding: 6px auto;
+  }
+  14% {
+    -webkit-transform:translateY(-0.5%);
+  }
+  15% {
+    -webkit-transform:translateY(0);
+    padding: 8px auto;
+  }
+  16% {
+    -webkit-transform:translateY(-1%);
+  }
+  17% {
+    -webkit-transform:translateY(0);
+    padding: 8px auto;
+  }
+  18% {
+    -webkit-transform:translateY(-0.5%);
+  }
+  19% {
+    -webkit-transform:translateY(0);
+    padding: 10px;
+  }
+  20% {
+    -webkit-transform:translateY(-0.5%);
+    padding: 10px;
+  }
+  100% {
+    -webkit-transform:translateY(0.5%);
+    padding: 10px;
+  }
+}
