@@ -669,6 +669,11 @@ body {
     top: 0;
     width: auto;
   }
+
+  .about-author-text p.email a {
+    color: blue;
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 701px) and (max-width: 767px) {
@@ -681,6 +686,10 @@ body {
     left:  25px;
     top: 25px;
     width: 300px;
+  }
+
+  .about-author-text p.email a {
+    color: white;
   }
 
   .about-author-text p.email {
@@ -699,6 +708,10 @@ body {
     left:  50px;
     top: 50px;
     width: 300px;
+  }
+
+  .about-author-text p.email a {
+    color: white;
   }
 
   .about-author-text p.email {
@@ -847,7 +860,6 @@ footer {
 
    .copyright {
     font-size: 20px;
-    padding: 250px 0;
   }
 }
 
