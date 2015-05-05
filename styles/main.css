@@ -3,7 +3,14 @@
 ** Released under MIT License, except for images and copyrights
 */
 
+/*
 
+@media (max-width: 480px) {}
+@media (min-width: 480px) and (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 1440px) {}
+@media (min-width: 1441px) {}
+
+*/
 
 
 
@@ -70,6 +77,45 @@ body {
 
 
 
+/*
+** INTRO: section-intro;
+*/
+.section-intro {
+  background: white;
+  min-height: 150px;
+  overflow: hidden;
+}
+
+.section-intro .quote {
+  display: inline-block;
+  margin: 10px 20px 40px 10px;
+  width: 30%;
+}
+
+.section-intro .quote .author {
+  font-size: 11px;
+}
+.section-intro .quote .quote-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+@media (max-width: 480px) {
+  .section-intro .quote {
+    width: 90%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .section-intro {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .section-intro {
+    padding: 25px;
+  }
+}
 
 /*
 ** FIRST SECTION: BOOK TITLE AND PARALLAX;
@@ -237,7 +283,7 @@ body {
 */
 
 .section-two-a {
-  background: #ffffcc;
+  background: white;
   border-top: 1px solid #c6c6c6;;
   border-bottom: 1px solid #c6c6c6;
   width: 100%;
@@ -323,15 +369,16 @@ body {
   }
 
    .about-the-book p.first-paragraph {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 1.8;
   }
 
    .about-the-book p.second-paragraph {
-    font-size: 36px;
+    font-size: 16px;
   }
 
    .about-the-book p.third-paragraph {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.8;
   }
 }
@@ -342,21 +389,23 @@ body {
 */
 
 .section-two-b {
-  background: #fff;
-  padding: 50px;
+  background: #ffffcc;
+  margin: 0 auto;
+  position: relative;
+  text-align: center
   width: auto;
 }
 
 .buy-cta-column {
   display: inline-block;
-  padding: 100px 15px 15px;
+  margin: 0 auto;
+  padding: 10px;
   vertical-align: top;
 }
 
 .book-cover-wrapper {
   display: inline-block;
-  margin: 50px 0 0 50px;
-  width: auto;
+  margin: 0 auto;
 }
 
 .book-cover-cta {
@@ -365,24 +414,26 @@ body {
   height: 650px;
 }
 
+.buy-cta-about {
+  display: inline-block;
+  margin: 0 25px;
+}
+
 .cta-buy {
-  color: #003399;
+  color: white;
   background-clip: border-box;
-  background-color: #de9502;
-  background-image: -moz-linear-gradient(top, #efefef, #ffffcc);
-  background-image: -ms-linear-gradient(top, #efefef, #ffffcc);
-  background-image: -webkit-gradient(linear,0 0,0 100%,from( #efefef),to( #ffffcc));
-  background-image: -webkit-linear-gradient(top, #efefef, #ffffcc);
-  background-image: -o-linear-gradient(top, #efefef, #ffffcc);
-  background-image: linear-gradient(top, #efefef, #ffffcc);
+  background-color: #e89c02;
+  background-image: -moz-linear-gradient(top, #f6a602, #d38e02);
+  background-image: -ms-linear-gradient(top, #f6a602, #d38e02);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from( #f6a602),to( #d38e02));
+  background-image: -webkit-linear-gradient(top, #f6a602, #d38e02);
+  background-image: -o-linear-gradient(top, #f6a602, #d38e02);
+  background-image: linear-gradient(top, #f6a602, #d38e02);
   background-repeat: repeat-x;
-  border: 1px solid #003399;
   border-radius: 6px;
-  bottom: 25px;
-  display: block;
-  font-size: 34px;
-  margin-bottom: 25px;
-  margin-left: 30px;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 5px;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -390,6 +441,7 @@ body {
 }
 
 .cta-buy:hover {
+  color: #EFEFEF;
   background-color: #e89c02;
   background-image: -moz-linear-gradient(top, #f6a602, #d38e02);
   background-image: -ms-linear-gradient(top, #f6a602, #d38e02);
@@ -400,27 +452,9 @@ body {
   background-repeat: repeat-x;
 }
 
-.about-buy-cta {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
-.cta-text {
-  font-family: 'Nothing You Could Do', cursive;
-  font-size: 75px;
-}
-
 @media (max-width: 480px) {
-  .section-two-b {
-    padding: 25px 0px 25px 5px;
-  }
-   .cta-text {
-    font-size: 25px;
-  }
 
   .cta-buy {
-    font-size: 25px;
     margin-left: 0;
   }
 
@@ -434,16 +468,8 @@ body {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-   .cta-text {
-    font-size: 35px;
-  }
-
-  .about-buy-cta {
-    margin-top: 25px;
-  }
 
   .cta-buy {
-    font-size: 25px;
     margin-left: 0;
   }
 
@@ -810,13 +836,13 @@ footer {
 
 @media (min-width: 481px) and (max-width: 767px) {
    .section-six {
-    height: 236px;
+    height: 200px;
   }
 }
 
 @media (min-width: 768px) {
    .section-six {
-    height: 523px;
+    height: 200px;
   }
 
    .copyright {
